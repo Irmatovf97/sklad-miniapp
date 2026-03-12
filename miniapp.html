@@ -572,7 +572,7 @@ function showStatusScreen(icon, text, type, res) {
     html += `<div class="info-row"><span class="info-label">${t.firma}</span><span class="info-val">${res.firma}</span></div>`;
   }
   if (res.vaqt) {
-    html += `<div class="info-row"><span class="info-label">${t.kelish_vaqti}</span><span class="info-val">${res.vaqt}</span></div>`;
+    html += `<div class="info-row"><span class="info-label">${t.kelish_vaqti}</span><span class="info-val">${res.vaqt ? res.vaqt.substring(0,5) : ""}</span></div>`;
   }
   if (res.kechikish_daqiqa) {
     html += `<div class="info-row"><span class="info-label">${t.kechikish}</span><span class="info-val" style="color:var(--warn)">${res.kechikish_daqiqa} ${t.daqiqa}</span></div>`;
